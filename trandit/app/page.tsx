@@ -4,7 +4,6 @@ export default function Home() {
     <>
       <div className="title">Trand - IT</div>
       <div className="news">News</div>
-      {}
     </>
   )
 }
