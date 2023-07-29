@@ -3,17 +3,15 @@ import styled from "styled-components"
 
 const HeaderMenu = styled.span`
     display: flex;
-    justify-content: center;
     margin: 10px;
     .div{
-        margin: 10;
+    }
+    .bar-space {
         display: flex;
-        justify-content: space-between;
-    }
-    .home{
         justify-content: flex-end;
+        width: 200px;
     }
-    .menu{
+    .menu .home{
         padding: 20px;
     }
     
@@ -22,11 +20,11 @@ const HeaderMenu = styled.span`
 export default function Header() {
     return (
         <HeaderMenu>
-            <div>
                 <Link className='home' href='/'>Trand-IT</Link>
+                <span className="bar-space"></span>
                 <Link className='menu' href='/'>COMMUNITY</Link>
+                <span className="bar-space"></span>
                 <Link className='menu' href='/'>ETC</Link>
-            </div>
         </HeaderMenu>
     )
 }
