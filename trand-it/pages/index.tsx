@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import { Mongoose } from "mongoose";
 import styled from 'styled-components';
 
+
 declare global {
   var mongoose: {
     promise: Promise<Mongoose> | null;
@@ -16,10 +17,10 @@ const Header = styled.h2`
 `
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <Header>Trand-it</Header>
+  <Layout title='Trad-IT'>
     <p>
       {/* 서치 */}
+      {/* <Header>Trand-it</Header> */}
       <Link href="/search">search</Link>
     </p>
   </Layout>
