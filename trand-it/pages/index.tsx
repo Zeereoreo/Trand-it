@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import { Mongoose } from "mongoose";
-import styled from 'styled-components';
 import Banner from '../components/Banner';
 
 declare global {
@@ -11,17 +10,13 @@ declare global {
   };
 }
 
-const Header = styled.h2`
-  margin: 0;
-  text-align: center;
-`
 
 const IndexPage = () => (
   <Layout title='Trad-IT'>
     <p>
       {/* 서치 */}
       {/* <Header>Trand-it</Header> */}
-      <Link href="/search">search</Link>
+      <Link  className="text-3xl font-bold underline" href="/search">CSS확인</Link>
       <Banner></Banner>
     </p>
   </Layout>
